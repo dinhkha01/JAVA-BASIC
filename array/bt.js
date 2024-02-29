@@ -6,7 +6,7 @@ if (isNaN(a) || isNaN(b) || a < 0 || b < 0) {
   alert("sai rồi");
 } else {
   for (var i = 1; i <= a; i++) {
-    if (i % a === a || i % b === 0) {
+    if (i % a === 0 || i % b === 0) {
       array.push(i);
     }
   }
