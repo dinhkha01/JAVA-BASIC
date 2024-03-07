@@ -7,7 +7,7 @@ class Book {
 let n = Number(prompt("Nhập vào độ dài của kho sách"));
 let books = [];
 for (var i = 0; i < n; i++) {
-  let author = prompt("Mời nhập tác giả");
+  let author = prompt("Mời nhập tác giả ");
   let name = prompt("Nhập tên sách");
   let book = new Book(author, name);
   books.push(book);
