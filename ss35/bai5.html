@@ -8,7 +8,12 @@
 
   <body>
     <label for="">item</label>
-    <input type="text" id="value" style="background-color: yellow" />
+    <input
+      type="text"
+      id="value"
+      onkeydown="changeBackground(this)"
+      style="background-color: yellow"
+    />
     <button onclick="add()">ADD</button>
     <ul id="out"></ul>
 

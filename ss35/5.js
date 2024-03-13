@@ -1,9 +1,5 @@
-function mau(out, item) {
-  if (item !== " ") {
-    out.style.background = "white";
-  } else {
-    out.style.backgroundColor = "yellow";
-  }
+function changeBackground(input) {
+  input.style.backgroundColor = "white";
 }
 
 function add() {
@@ -17,6 +13,6 @@ function add() {
     ul.appendChild(inr);
     out.value = "";
 
-    mau(out, item);
+    out.style.backgroundColor = "yellow";
   }
 }
