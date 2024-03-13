@@ -1,4 +1,4 @@
-const names = ["Nguyễn Văn A", "Vũ Thị B", "Nguyễn Minh C"];
+const names = ["Nguyễn Dinh Kha ", "Vũ Thị Tram Anh", "Nguyễn Minh Cu"];
 
 function displayNames(names) {
   const listElement = document.getElementById("namesList");
