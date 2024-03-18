@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thêm và Xóa người dùng</title>
+  </head>
+  <body>
+    <h1>Form thêm và xóa người dùng</h1>
+    <input type="text" id="username" placeholder="Nhập tên người dùng" />
+    <button id="addButton" onclick="addUser()">Thêm</button>
+    <button onclick="deleteUser()">Xóa</button>
+    <div id="users"></div>
+
+    <script>
+      function addUser() {
+        let username = document.getElementById("username").value;
+        if (username) {
+          localStorage.setItem("userName", username);
+          document.getElementById("addButton").style.display = "none";
+          displayUsers();
+        }
+      }
+
+      function deleteUser() {
+        localStorage.removeItem("userName");
+        document.getElementById("addButton").style.display = "block";
+        displayUsers();
+      }
+
+      function displayUsers() {
+        let usersDiv = document.getElementById("users");
+        let username = localStorage.getItem("userName");
+        usersDiv.innerHTML = username ? `Người dùng tên: ${username}` : "";
+      }
+
+      window.onload = function () {
+        displayUsers();
+        document.getElementById("addButton").style.display =
+          localStorage.getItem("userName") ? "none" : "block";
+      };
+    </script>
+  </body>
+</html>

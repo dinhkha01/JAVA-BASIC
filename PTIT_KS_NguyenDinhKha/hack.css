@@ -1,0 +1,213 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ecc9c9;
+}
+.intro_name b {
+  text-decoration: underline;
+  text-decoration-color: #ffa500;
+  border-bottom: 3px solid #ffa500;
+}
+.intro img {
+  width: 25%;
+  height: 60%;
+}
+.intro_name {
+  padding: 80px;
+}
+.intro h1 {
+  margin-bottom: 0;
+}
+
+.intro p {
+  margin-top: 0;
+}
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #47c2ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.box_1 {
+  padding: 30px 100px;
+  grid-area: box1;
+}
+.box_2 {
+  padding: 30px;
+  grid-area: box2;
+}
+.box_3 {
+  grid-area: box3;
+}
+
+.box {
+  height: 600px;
+  justify-content: space-around;
+  display: grid;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box3";
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+.card6 {
+  grid-area: card6;
+}
+.card7 {
+  grid-area: card7;
+}
+.card8 {
+  grid-area: card8;
+}
+.box_3 {
+  display: grid;
+  grid-template-areas:
+    "card1 card2 card3 card4 card5"
+    "card0 card6 card7 card8 card10";
+  place-items: center;
+  justify-content: space-evenly;
+}
+.card6,
+.card7,
+.card8 {
+  width: 250px;
+  place-items: center;
+  transform: translateY(-50px);
+}
+.logo_6 {
+  padding-bottom: 35px;
+}
+.logo {
+  width: 70%;
+  height: 70%;
+}
+
+.col-md-4 {
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.box_4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  background-color: rgb(210, 255, 210);
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+  width: 70px;
+  height: 35px;
+  margin-left: 600px;
+  border-radius: 5px;
+}
+.bootom_top {
+  text-align: center;
+}
+.mid_bot-card1,
+.mid_bot-card2,
+.mid_bot-card3,
+.mid_bot-card4,
+.mid_bot-card5 {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 90%;
+  width: 315px;
+}
+.mid_bot-card1 {
+  grid-area: the1;
+}
+.mid_bot-card2 {
+  grid-area: the2;
+}
+.mid_bot-card3 {
+  grid-area: the3;
+}
+.mid_bot-card4 {
+  grid-area: the4;
+}
+.mid_bot-card5 {
+  grid-area: the5;
+}
+.mid {
+  margin-left: 200px;
+}
+.mid_bot {
+  display: grid;
+  margin-left: 25px;
+  width: 1000px;
+  grid-template-areas:
+    "the1 the2 the3"
+    "the4 the5 the0";
+}
+.mid_bot-card1-h1 {
+  width: 45px;
+  height: 50px;
+  background-color: #f7becf9a;
+}
+.mid_bot-card1-h2,
+.mid_bot-card1-h3,
+.mid_bot-card1-h4,
+.mid_bot-card1-h5 {
+  width: 50px;
+  height: 50px;
+  background-color: #dbdbdb9a;
+}
+.mid_bot-card1-1,
+.mid_bot-card1-2,
+.mid_bot-card1-3,
+.mid_bot-card1-4,
+.mid_bot-card1-5 {
+  width: 350px;
+  display: flex;
+  place-items: center;
+}
+.mid_bot-card1-chu1,
+.mid_bot-card1-chu2,
+.mid_bot-card1-chu3,
+.mid_bot-card1-chu4,
+.mid_bot-card1-chu5 {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.mid_bot-card1-ba1,
+.mid_bot-card1-ba2,
+.mid_bot-card1-ba3,
+.mid_bot-card1-ba4,
+.mid_bot-card1-ba5 {
+  display: flex;
+}
+.mid_bot-card1-ba1 div,
+.mid_bot-card1-ba2 div,
+.mid_bot-card1-ba3 div,
+.mid_bot-card1-ba4 div,
+.mid_bot-card1-ba5 div {
+  color: rgb(0, 157, 255);
+  font-size: 10px;
+  padding: 5px 5px;
+  background-color: #dad2d49a;
+  margin-top: 15px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
